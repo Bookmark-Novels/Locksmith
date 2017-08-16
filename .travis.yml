@@ -2,3 +2,11 @@ language: python
 python:
     - "3.4"
 script: pytest
+deploy:
+  provider: pypi
+  on:
+    tags: true
+    branch: master
+  user: Bookmark
+  password:
+    secure: v3EXy8isLbwluoLFAILmMJWnA9HN58msWJxqVVf1AK+8neGJqAvIxSS/PIb/qNbk+hSGv+gLuMcOCMRRHcU5yK4Ryk4b5YvhKMq7BHoN228BRZOnsenjGJC20/vVAoRJ8Gjd+pPTZ3YPMG9IZKHa7Wrj3cf+ic1f4jkS1MeW3TKV+dpY5LvzgU+En6yIpclvgplPPiakFSPB3DQ+UtBtkdiphgCZh7AVqmU5T6oRqy89W/6GoW8UfPNQniX8kOFwES1PBeKwv4aZ0/pJ03H3GZ2269nFxhM17Tn+nqZx/JbdIx3gpj933X/p4xkAaPBzQ1VYXntxmGbsX75q915E8uZk3kzR+3VeZ6gy2Jn2lx8QYjrP8SDLM/Cwle3GvI/vL5LwKxVcr3OkAwxVm7CIVeYKipJ4hwkqekrzFyHk4SqwTUB+wAXrfBKGjHLfbdbb3kcuMoYtQD/SuuXrJ1V8jiBNDgrkbdjpMH+dUyuXJxotOFNz7eJ2A3VoVAwGJfvG7UXGAN814zIKpWBrg05ph8RF9EY0zqLcbYnWZjZMDyeS1ByruwCJ+3rk1SQvp1/5UdBcNusSSg+1Ynrad94PpYmIvVe3gSkH5YDgF3du7A91SGDt3sCncZkF3GxqPFaMgzgCalDEH41Q8wM4nplrhPoNgPP8d4y7A+gwwTA8gXA=
